@@ -1,0 +1,26 @@
+﻿<Window x:Class="RecipeManagerWPF.AddRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeManagerWPF"
+        mc:Ignorable="d"
+        Title="AddRecipeWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBox x:Name="RecipeNameTextBox" Text="Recipe Name" Margin="5"/>
+
+            <TextBox x:Name="NumIngredientsTextBox" Text="Number of Ingredients" Margin="5"/>
+            <Button Content="Add Ingredients" Click="AddIngredients_Click" Margin="5"/>
+
+            <StackPanel x:Name="IngredientsPanel" Margin="5"/>
+
+            <TextBox x:Name="NumStepsTextBox" Text="Number of Steps" Margin="5"/>
+            <Button Content="Add Steps" Click="AddSteps_Click" Margin="5"/>
+
+            <StackPanel x:Name="StepsPanel" Margin="5"/>
+
+            <Button Content="Save Recipe" Click="SaveRecipe_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
